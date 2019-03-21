@@ -1,0 +1,161 @@
+[{
+  "label": "h13s",
+  "shape": "heart",
+  "size": "13mm",
+  "type": "standard"
+}, {
+  "label": "h15s",
+  "shape": "heart",
+  "size": "15mm",
+  "type": "standard"
+}, {
+  "label": "h19s",
+  "shape": "heart",
+  "size": "19mm",
+  "type": "standard"
+}, {
+  "label": "h20p",
+  "shape": "heart",
+  "size": "20mm",
+  "type": "premium"
+}, {
+  "label": "h204",
+  "shape": "heart",
+  "size": "20mm",
+  "type": "4-picture",
+  "options": [{
+    "label": "Outsides",
+    "value": "o"
+  }, {
+    "label": "Insides",
+    "value": "i"
+  }]
+}, {
+  "label": "h23s",
+  "shape": "heart",
+  "size": "23mm",
+  "type": "standard"
+}, {
+  "label": "h24p",
+  "shape": "heart",
+  "size": "24mm",
+  "type": "premium"
+}, {
+  "label": "h26s",
+  "shape": "heart",
+  "size": "26mm",
+  "type": "standard"
+}, {
+  "label": "h264",
+  "shape": "heart",
+  "size": "26mm",
+  "type": "4-picture",
+  "options": [{
+    "label": "Outsides",
+    "value": "o"
+  }, {
+    "label": "Insides",
+    "value": "i"
+  }]
+}, {
+  "label": "e14s",
+  "shape": "oval",
+  "size": "14mm",
+  "type": "standard"
+}, {
+  "label": "e16s",
+  "shape": "oval",
+  "size": "16mm",
+  "type": "standard"
+}, {
+  "label": "e17s",
+  "shape": "oval",
+  "size": "17mm",
+  "type": "standard"
+}, {
+  "label": "e17p",
+  "shape": "oval",
+  "size": "17mm",
+  "type": "premium"
+}, {
+  "label": "e194",
+  "shape": "oval",
+  "size": "19mm",
+  "type": "4-picture",
+  "options": [{
+    "label": "Outsides",
+    "value": "o"
+  }, {
+    "label": "Inside Left",
+    "value": "l"
+  }, {
+    "label": "Inside Right",
+    "value": "r"
+  }]
+}, {
+  "label": "e20s",
+  "shape": "oval",
+  "size": "20mm",
+  "type": "standard"
+}, {
+  "label": "e21p",
+  "shape": "oval",
+  "size": "21mm",
+  "type": "premium"
+}, {
+  "label": "e23s",
+  "shape": "oval",
+  "size": "23mm",
+  "type": "standard"
+}, {
+  "label": "e234",
+  "shape": "oval",
+  "size": "23mm",
+  "type": "4-picture",
+  "options": [{
+    "label": "Outsides",
+    "value": "o"
+  }, {
+    "label": "Inside Left",
+    "value": "l"
+  }, {
+    "label": "Inside Right",
+    "value": "r"
+  }]
+
+}, {
+  "label": "e30s",
+  "shape": "oval",
+  "size": "30mm",
+  "type": "standard"
+}, {
+  "label": "e39s",
+  "shape": "oval",
+  "size": "39mm",
+  "type": "standard"
+}, {
+  "label": "r13s",
+  "shape": "circle",
+  "size": "13mm",
+  "type": "standard"
+}, {
+  "label": "r18s",
+  "shape": "circle",
+  "size": "18mm",
+  "type": "standard"
+}, {
+  "label": "r19s",
+  "shape": "circle",
+  "size": "19mm",
+  "type": "standard"
+}, {
+  "label": "r23s",
+  "shape": "circle",
+  "size": "23mm",
+  "type": "standard"
+}, {
+  "label": "r33s",
+  "shape": "circle",
+  "size": "33mm",
+  "type": "standard"
+}]

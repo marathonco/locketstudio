@@ -1,0 +1,50 @@
+// // contrast function
+@function contrast-color($color, $percent: 60%) {
+  @if (lightness($color) < 50) {
+    @return adjust-color($color, $lightness: $percent);
+  }
+
+  @else {
+    @return adjust-color($color, $lightness: -$percent);
+  }
+}
+
+//
+// Hide
+// --------
+// removes an element from view
+//
+
+@mixin hide() {
+  display: none !important;
+  text-indent: -9999px !important;
+  visibility: hidden !important;
+}
+
+//
+// hide-text
+// --------
+// removes text from view
+// primarily used for image replacement
+//
+@mixin hide-text() {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+//
+// getColor
+// --------
+// Easily retrieve colors for use.
+//
+// @access public
+//
+// @param {String} $color - Name of the color
+// @param {Color}  $value - The color value to grab (default is "base")
+//
+// @return {Color} Value of the color
+//
+@function getColor($color, $value: 'base', $set: $colors) {
+  @return map-get(map-get($set, $color), $value);
+}

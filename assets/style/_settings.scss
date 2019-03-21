@@ -1,0 +1,79 @@
+// Viewports
+// mobile first
+$viewport-m: 32rem !default;
+$viewport-l: 48rem !default;
+$viewport-xl: 64rem !default;
+
+$m-up: "only screen and (min-width:#{$viewport-m})";
+$m-only: "only screen and (min-width:#{$viewport-m}) and (max-width:#{$viewport-l} - 1rem)";
+
+$l-up: "only screen and (min-width:#{$viewport-l})";
+$l-only: "only screen and (min-width:#{$viewport-l}) and (max-width:#{$viewport-xl} - 1rem)";
+
+$xl-up: "only screen and (min-width:#{$viewport-xl})";
+
+// Colors
+$brand1: #998c7d; // brown
+$brand2: #dcd0bc; // tan
+$brand3: #fab5a6; // pink
+$brand4: #f3766e; // red
+$brand5: #a4d1a8; // green
+$brand6: #bc433b; // darker red
+
+$background-primary: $brand1;
+$background-alt: $brand2;
+
+// Colors
+$colors: (base: (primary: #053042, // navy
+selection: #35A987, // mint
+lines: #e0e0e0),
+
+text: (primary: #ffffff, // navy
+secondary: $brand1, // brown
+contrast: #000000, // black
+heading: #ffffff, // white
+accent: $brand2, // tan
+ui: #000, // black
+link: #ffffff, // white
+linkHover: #ffffff), // white
+
+background: (primaray: $brand1,
+body: $brand1,
+dark: #D2EADC, // light mint
+light: $brand2, // tan
+),
+
+state: (muted: #888, // dark grey
+primary: $brand4, // red
+success: $brand4, // red
+warning: $brand2, // tan
+error: #999999, // grey
+disabled: #aaaaaa // light grey
+));
+
+// Fonts
+$font-size: 12px !default;
+$font-size-m: 15px !default;
+$font-size-l: 16px !default;
+
+$font-family-paragraph: 'Playfair Display',
+Georgia,
+Cambria,
+"Times New Roman",
+Times,
+serif;
+
+$font-family-heading: $font-family-paragraph;
+
+$font-family-accent: 'Oswald',
+sans-serif;
+
+// Style Defaults
+$border-radius-default: 5px;
+
+// Buttons
+$border-radius-button: $border-radius-default !default;
+$button-border: none;
+
+// Inputs
+$border-radius-input: $border-radius-default !default;

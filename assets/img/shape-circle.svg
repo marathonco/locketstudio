@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" class="svg-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="252px" height="393px" viewBox="13.5 41.211 252 393" enable-background="new 13.5 41.211 252 393" xml:space="preserve">
+<g class="svg-locket">
+	<path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M150.943,153.537
+		c0.574-1.263,1.005-2.62,1.229-4.04l9.501-59.789c1.029-6.475-3.492-11.771-10.048-11.771h-21.503
+		c-6.556,0-11.078,5.296-10.048,11.771l9.501,59.789c0.226,1.42,0.656,2.776,1.23,4.04c-6.522,3.566-10.948,10.491-10.948,18.449
+		c0,11.607,9.409,21.017,21.017,21.017s21.018-9.409,21.018-21.017C161.891,164.028,157.466,157.103,150.943,153.537z"/>
+	<g>
+
+			<path fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M26.763,279.141c1.562-8.885,4.137-17.418,7.599-25.479c-1.286-0.902-3.024-1.46-4.943-1.46c-3.953,0-7.159,2.351-7.159,5.251
+			v16.815C22.26,276.478,24.125,278.365,26.763,279.141z"/>
+
+			<path fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M26.763,319.531c-2.637,0.774-4.503,2.662-4.503,4.874v16.812c0,2.9,3.206,5.251,7.159,5.251c1.919,0,3.657-0.558,4.943-1.457
+			C30.899,336.949,28.323,328.415,26.763,319.531z"/>
+
+			<path fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M26.631,318.74c-1.064-6.31-1.627-12.791-1.627-19.404c0-6.604,0.562-13.078,1.623-19.382c-2.566,0.799-4.367,2.664-4.367,4.836
+			v29.11C22.26,316.077,24.062,317.943,26.631,318.74z"/>
+	</g>
+	<path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M157.625,184.676
+		c-3.838,5.059-9.911,8.327-16.751,8.327s-12.913-3.269-16.751-8.327c-56.054,8.119-99.118,56.356-99.118,114.66
+		c0,63.992,51.877,115.869,115.87,115.869c63.991,0,115.869-51.877,115.869-115.869
+		C256.743,241.033,213.679,192.794,157.625,184.676z"/>
+</g>
+<g class="svg-arrows">
+	<g class="svg-arrowhead-left">
+		<polygon fill="#939598" points="62.008,307.348 58.861,299.939 62.008,292.534 44.451,299.939 		"/>
+	</g>
+	<g class="svg-arrowhead-right">
+		<polygon fill="#939598" points="222.999,307.348 226.146,299.939 222.999,292.534 240.556,299.939 		"/>
+	</g>
+	<g class="svg-arrow-line">
+
+			<line fill="none" stroke="#939598" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6.1324,6.1324" x1="53.583" y1="299.939" x2="234.489" y2="299.939"/>
+	</g>
+</g>
+</svg>

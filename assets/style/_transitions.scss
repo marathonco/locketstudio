@@ -1,0 +1,58 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: .5s;
+  transition-property: height, opacity;
+  transition-timing-function: ease;
+  overflow: hidden;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: .4s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+}
+
+.slide-left-enter,
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(100vw);
+}
+
+.slide-right-enter,
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-name: zoom;
+  position: absolute;
+}
+
+.zoom-leave-active {
+  animation-direction: reverse;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes zoom {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

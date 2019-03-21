@@ -1,0 +1,24 @@
+@import "reset";
+@import "settings";
+@import "mixins";
+@import "type";
+@import "buttons";
+@import "forms";
+@import "transitions";
+@import "panels";
+
+.thumb {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  flex: 1;
+}
+
+svg {
+  display: block;
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}

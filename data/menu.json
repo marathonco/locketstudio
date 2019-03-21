@@ -1,0 +1,21 @@
+[{
+  "title": "About Us",
+  "to": {
+    "name": "about"
+  }
+}, {
+  "title": "Get Started",
+  "to": {
+    "name": "app"
+  }
+}, {
+  "title": "Tutorials",
+  "to": {
+    "name": "tutorials"
+  }
+}, {
+  "title": "Contact",
+  "to": {
+    "name": "contact"
+  }
+}]

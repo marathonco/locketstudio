@@ -1,0 +1,167 @@
+// // Button Colors
+@mixin button-color($bg: $button-background, $bg-hover:'', $color: '', $color-hover:'', $border: $button-border, $border-hover:'') {
+
+  // background color
+  background-color: $bg;
+
+  // text color
+  @if($color !='') {
+    color: $color;
+  }
+
+  @else {
+    color: contrast-color($bg, $percent: -60%);
+  }
+
+  // border color
+  @if($border !='') {
+    border: $border;
+  }
+
+  // hover colors
+  &:hover {
+
+    // background color
+    @if($bg-hover !='') {
+      background-color: $bg-hover
+    }
+
+    @else {
+      background-color: contrast-color($bg, $percent: 10%);
+    }
+
+    // text color
+    @if($color-hover !='') {
+      color: $color-hover;
+    }
+
+    @else {
+      @if($color !='') {
+        color: contrast-color($color, $percent: 20%);
+      }
+
+      @else {
+        color: contrast-color($bg, 60%);
+      }
+    }
+
+    // border color
+    @if($border-hover !='') {
+      border: $border-hover;
+    }
+  }
+}
+
+button,
+.button,
+input[type="submit"] {
+  @include button-color(getColor(state, primary));
+  @include font-accent();
+  border-radius: $border-radius-button;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1rem auto .25rem auto;
+  outline: none;
+  padding: .75rem .9rem;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  transition: background .3s ease-in-out, box-shadow .3s ease-in-out, text-shadow .3s ease-in-out;
+  will-change: background, box-shadow, text-shadow;
+
+  &:hover {
+    box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, .75);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+  }
+
+  @media #{$m-up} {
+    font-size: 1rem;
+  }
+
+  &.large {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+  }
+
+  &:disabled,
+  &.disabled {
+    @include button-color($bg: getColor(state, disabled), $bg-hover: getColor(state, disabled));
+    cursor: default;
+
+    &:hover::after {
+      box-shadow: none;
+    }
+  }
+
+  &:hover::after {
+    box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, .75);
+  }
+
+  &.success {
+    @include button-color(getColor(state, success));
+  }
+
+  &.warning {
+    @include button-color(getColor(state, warning));
+  }
+
+  &.error {
+    @include button-color(getColor(state, error));
+  }
+}
+
+a.button,
+label.button {
+  display: table;
+}
+
+p {
+
+  button,
+  .button,
+  input[type="submit"] {
+    display: inline-block;
+    margin: .25rem;
+    width: auto;
+  }
+}
+
+.actions {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .25rem;
+
+  .button,
+  button {
+    margin: .25rem;
+  }
+}
+
+.actions-inline {
+  flex-direction: row;
+}
+
+// inline attached button
+p>input {
+  z-index: 2;
+
+  &+button,
+  &+.button,
+  &+input[type="submit"] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    left: -1rem;
+    line-height: 1.2;
+    padding-left: 1.5rem;
+    top: 1px;
+    z-index: 1;
+
+    @media #{$m-up} {
+      top: 0;
+    }
+  }
+}

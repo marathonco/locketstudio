@@ -1,0 +1,46 @@
+input,
+textarea {
+  @include font-accent;
+  background: #eeeeee;
+  border: none;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: $border-radius-input;
+  display: inline-block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 1.4rem;
+  margin: 0 0 .5rem;
+  outline: none;
+  padding: 0 .75rem;
+  position: relative;
+  transition: box-shadow .3s ease-in-out, background .3s ease-in-out;
+  will-change: box-shadow, background;
+
+  @media #{$m-up} {
+    height: 2.7rem;
+  }
+
+  &:focus,
+  &:active {
+    background: #dddddd;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+}
+
+textarea {
+  height: auto;
+}
+
+input[type="range"],
+input[type="range"]:focus,
+input[type="range"]:active {
+  box-shadow: none;
+}
+
+textarea {
+  text-align: left;
+}
+
+label {
+  @include font-accent;
+}

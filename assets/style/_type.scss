@@ -1,0 +1,224 @@
+//
+// font-paragraph
+// --------
+// default styling for basic paragraphs
+//
+// @access public
+//
+//
+
+@mixin font-paragraph {
+  font-family: $font-family-paragraph;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+//
+// font-heading
+// --------
+// default styling for headings
+//
+// @access public
+//
+//
+
+@mixin font-heading {
+  font-family: $font-family-heading;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+//
+// font-accent
+// --------
+// default styling for menus, buttons, nav and accents
+//
+// @access public
+//
+//
+
+@mixin font-accent {
+  font-family: $font-family-accent;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CRD8Ne_KjP89kA3_zOrHj8E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIN4KoCs5_BuQksQmhwRAS2Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  @include font-paragraph;
+  color: getColor(text, primary);
+  font-size: $font-size;
+  line-height: 1.5;
+
+  @media #{$m-up} {
+    font-size: $font-size-m;
+  }
+
+  @media #{$l-up} {
+    font-size: $font-size-l;
+  }
+}
+
+p,
+.p {
+  @include font-paragraph;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  @include font-heading;
+  font-weight: inherit;
+  line-height: 1.42;
+  margin-bottom: .5rem;
+  text-align: center;
+
+}
+
+h1,
+.h1 {
+  font-size: 3.998rem;
+  margin-top: 0;
+
+}
+
+h2,
+.h2 {
+  font-size: 2.827rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.999rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.414rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.121rem;
+}
+
+h6,
+.h6 {
+  font-size: .88rem;
+}
+
+small,
+.small {
+  font-size: .707em;
+}
+
+pre,
+code {
+  font-family: monospace;
+}
+
+.center {
+  text-align: center;
+}
+
+p,
+li,
+dd,
+dt {
+
+  a,
+  a:visited,
+  a:link,
+  a:active {
+    color: getColor(text, link);
+    display: inline-block;
+    font-weight: 800;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      background: rgba($brand1, .7);
+      content: '';
+      bottom: 0;
+      display: block;
+      height: 3px;
+      left: -4%;
+      position: absolute;
+      transition: height .3s ease-in-out, background .3s ease-in-out;
+      will-change: height, background;
+      width: 108%;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      background: rgba(88, 20, 20, 0.7);
+      height: 100%;
+    }
+  }
+}
+
+dl {
+  align-self: flex-start;
+}
+
+dt {
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+
+dd {
+  padding-left: 2rem;
+  text-align: left;
+  width: 100%;
+}
+
+hr {
+  background-color: rgba(255, 255, 255, .25);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, .5);
+  color: transparent;
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 1rem;
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.panel {
+  background: #ffffff;
+  box-shadow: 0 2rem 4rem -2rem rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  color: $brand1;
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  padding: 1rem;
+
+  @media #{$m-up} {
+    padding: .5rem 1rem;
+  }
+}
