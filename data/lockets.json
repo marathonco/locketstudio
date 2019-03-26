@@ -154,6 +154,22 @@
   "size": "23mm",
   "type": "standard"
 }, {
+  "label": "r234",
+  "shape": "circle",
+  "size": "23mm",
+  "type": "4-picture",
+  "options": [{
+    "label": "Outsides",
+    "value": "o"
+  }, {
+    "label": "Inside Left",
+    "value": "l"
+  }, {
+    "label": "Inside Right",
+    "value": "r"
+  }]
+
+}, {
   "label": "r33s",
   "shape": "circle",
   "size": "33mm",
