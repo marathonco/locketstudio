@@ -7,7 +7,7 @@
           {
             "targets": {
               "node": "current",
-              "ie": 11
+              "ie": 9
             }
           }
         ],
