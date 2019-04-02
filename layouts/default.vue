@@ -42,10 +42,10 @@ export default {
   background: $background-primary;
   border-top: 4px solid getColor(background, light);
   display: flex;
-  flex: 1;
+  flex: 1 0 auto;
   flex-direction: row;
   height: 100%;
-  // overflow: hidden;
+  overflow: hidden;
   // position: relative;
   width: 100%;
   main {
