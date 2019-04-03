@@ -30,6 +30,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  display: flex;
+}
 #container {
   align-items: center;
   display: flex;
@@ -42,10 +45,11 @@ export default {
   background: $background-primary;
   border-top: 4px solid getColor(background, light);
   display: flex;
-  flex: 1;
+  -ms-flex: 1 0 0;
+  flex: 1 0 auto;
   flex-direction: row;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   // position: relative;
   width: 100%;
   main {
