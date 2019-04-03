@@ -45,7 +45,7 @@ export default {
   flex: 1;
   flex-direction: row;
   height: 100%;
-  // overflow: hidden;
+  overflow: hidden;
   // position: relative;
   width: 100%;
   main {
