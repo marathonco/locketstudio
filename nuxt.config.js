@@ -45,15 +45,18 @@ module.exports = {
    */
   plugins: [{
     src: '~/plugins/aos',
-    ssr: false
+    mode: 'client'
   },
   {
-    src: '~plugins/vee-validate.js',
-    ssr: true
+    src: '~plugins/vee-validate.js'
+  },
+  {
+    src: '~plugins/vue-browserupdate.js',
+    mode: 'client'
   },
   {
     src: '~plugins/vue-slider-component.js',
-    ssr: false
+    mode: 'client'
   }
   ],
 
