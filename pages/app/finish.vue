@@ -34,8 +34,6 @@
       <img
         id="finalImage"
         :src="finalImage"
-        width="600"
-        height="400"
       >
     </section>
   </main>
@@ -220,29 +218,20 @@ export default {
 @media print {
   @page {
     /* 6in x 4in. */
-    size: 152.4mm 101.6mm;
-    margin: 0mm;
+    size: 6in 4in;
+    margin: 0in;
   }
-  html,
-  body {
-    /* prevent 2nd blank page from printing */
-    width: 6in !important;
-    height: 4in !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: relative !important;
-  }
+
   body * {
     border: 0 !important;
-    height: 100vh !important;
+    height: 100% !important;
     left: 0 !important;
     margin: 0 !important;
     outline: 0 !important;
     padding: 0 !important;
     position: absolute !important;
     top: 0 !important;
-    width: 100vw !important;
+    width: 100% !important;
     overflow: hidden !important;
     transition: none;
     visibility: hidden !important;
@@ -251,15 +240,19 @@ export default {
     border: 1px solid #000000;
     bottom: 0 !important;
     display: block !important;
-    height: 400px !important;
+    height: 1200px !important;
     height: 4in !important;
+    height: 100% !important;
     left: 0;
     margin: 0 auto !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
     overflow: visible !important;
     position: absolute !important;
     top: 0;
-    width: 600px !important;
+    width: 1800px !important;
     width: 6in !important;
+    width: 100% !important;
     visibility: visible !important;
     z-index: 999 !important;
   }
