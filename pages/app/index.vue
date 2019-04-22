@@ -46,6 +46,9 @@ export default {
     }
   },
   created() {
+    if (this.$route.query.code) {
+      this.inputCode = this.$route.query.code
+    }
     this.reset()
   },
   methods: {
