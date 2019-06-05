@@ -217,9 +217,11 @@ export default {
   position: relative;
 }
 .sticky {
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50%;
+  @media #{$m-up} {
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+  }
 }
 </style>

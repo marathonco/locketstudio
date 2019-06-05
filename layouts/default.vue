@@ -59,7 +59,7 @@ html {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    width: 100%;
+    width: 100vw;
   }
 }
 </style>
