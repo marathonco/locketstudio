@@ -107,6 +107,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import { ErrorBag } from 'vee-validate'
 
 export default {
@@ -117,11 +118,15 @@ export default {
         email: '',
         message: '',
         emailField: '',
+        template: '',
         status: ''
       }
     }
   },
   computed: {
+    ...mapGetters({
+      currentTemplate: 'app/getCurrentTemplate'
+    }),
     errors() {
       const errors = new ErrorBag()
       return errors
@@ -152,6 +157,9 @@ export default {
         if (!result) {
           this.formData.status = 'error'
         } else {
+          if (this.template) {
+            this.formData.template = this.template
+          }
           fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
