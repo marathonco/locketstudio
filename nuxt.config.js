@@ -55,10 +55,6 @@ module.exports = {
     src: '~plugins/vee-validate.js'
   },
   {
-    src: '~plugins/vue-browserupdate.js',
-    mode: 'client'
-  },
-  {
     src: '~plugins/vue-slider-component.js',
     mode: 'client'
   }
