@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import lockets from '~/data/lockets'
 import { mapActions } from 'vuex'
+import lockets from '~/data/lockets'
 
 export default {
   data() {

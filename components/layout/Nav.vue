@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import menu from '~/data/menu.json'
 import { mapGetters } from 'vuex'
+import menu from '~/data/menu.json'
 import Hamburger from '~/components/layout/Hamburger'
 
 export default {
