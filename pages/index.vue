@@ -1,8 +1,8 @@
 <template>
   <main class="start">
     <section>
-      <h4>What Is Locket Studio<sup>®</sup>?</h4>
-      <p>Locket Studio® is a free tool to help customers create perfectly sized photos for your Marathon™ Locket.</p>
+      <h4>What Is Locket Studio?</h4>
+      <p>Locket Studio is a free tool to help customers create perfectly sized photos for your Marathon™ Locket.</p>
       <p>We hope you find the tool helpful and that you end up with a personalized piece of jewelry that is special and meaningful to you.</p>
     </section>
     <section class="panel">
