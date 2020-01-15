@@ -2,7 +2,7 @@
   <main class="start">
     <section class="instructions">
       <h3>Welcome!</h3>
-      <p>This is a free tool to help you resize and print images for your locket! Follow these steps to find the correct size for your Marathon™ Locket.</p>
+      <p>This is a free tool to help you resize and print images for your locket! Follow these steps to find the correct size for your Marathon<sup>®</sup> Locket.</p>
     </section>
     <section class="container">
       <p>If you already have a locket code enter it here:</p>

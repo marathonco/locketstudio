@@ -2,7 +2,7 @@
   <main>
     <h3>F.A.Q.</h3>
     <dl>
-      <dt>Where can I find <a href="http://marathon-co.com">Marathon<sup>&#x2122;</sup> Lockets</a>?</dt>
+      <dt>Where can I find <a href="http://marathon-co.com">Marathon<sup>®</sup> Lockets</a>?</dt>
       <dd>
         If you are interested in finding a local distributer please send us a note on our <nuxt-link to="contact">
           Contact Page
